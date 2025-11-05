@@ -35,18 +35,9 @@ export default function HeaderBrandKit() {
     <div className="relative">
       <Link
         className="flex items-center gap-2 relative brand-kit-menu"
-        href="/"
-        onContextMenu={(e) => {
-          e.preventDefault();
-          setOpen(!open);
-
-          if (!open) {
-            clearDropdown(true);
-          }
-        }}
+        href="https://servicestories.com"
       >
-        <FirecrawlIcon className="size-28 -top-2 relative" />
-        <Logo />
+        <img src="/brand-lockup-color.svg" className="w-full max-w-[12rem]" />
       </Link>
 
       <AnimatePresence initial={false} mode="popLayout">
@@ -88,7 +79,7 @@ const Menu = ({ setOpen }: { setOpen: (open: boolean) => void }) => {
         {
           ease: cubicBezier(0.1, 0.1, 0.25, 1),
           duration: 0.2,
-        },
+        }
       );
     }
   }, []);
@@ -207,7 +198,7 @@ const Button = (attributes: React.ButtonHTMLAttributes<HTMLButtonElement>) => {
       {...attributes}
       className={cn(
         "flex gap-8 w-full items-center text-label-small group text-accent-black p-6",
-        attributes.className,
+        attributes.className
       )}
     >
       {attributes.children}

@@ -14,7 +14,7 @@ type Options = {
 export const encryptText = (
   text: string,
   progress: number,
-  _options?: Options,
+  _options?: Options
 ) => {
   const options = {
     randomizeChance: 0.7,

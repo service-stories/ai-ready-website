@@ -13,10 +13,6 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: "Is Your Website AI Ready?",
-  description: "UI components and design system for Firecrawl",
-  icons: {
-    icon: "/favicon.png",
-  },
 };
 
 export default function RootLayout({
@@ -27,6 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/icon-apple.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
         <ColorStyles />
       </head>
       <body
